@@ -27,20 +27,26 @@ module.exports = {
 	// you could use etheral or something similar here
 	"dev_smtp": {
 		// see https://nodemailer.com/smtp/
-		"host": "smtp.example.com",
+		"host": "sg2plvcpnl458406.prod.sin2.secureserver.net",
+		/* "host": "smtp.gmail.com", */
+		"port": 587,
 		"auth": {
-			"user": "username",
-			"pass": "password"
+			/* "user": "devarth383@gmail.com", */
+			"user": "testmail@athreva.com",
+			"pass": "Athreva@2020"
 		}
 	},
 
 	// SMTP connection options for nodemailer
 	"smtp": {
 		// see https://nodemailer.com/smtp/
-		"host": "smtp.example.com",
+		/* "host": "sg2plvcpnl458406.prod.sin2.secureserver.net", */
+		"host": "smtp.gmail.com",
+		"port": 587,
 		"auth": {
-			"user": "username",
-			"pass": "password"
+			"user": "devarth383@gmail.com",
+			/* "user": "testmail@athreva.com", */
+			"pass": "Athreva@2020"
 		}
 	},
 
@@ -50,8 +56,10 @@ module.exports = {
 		// all will be applied to all emails
 		// see https://nodemailer.com/message/ for the options you can configure
 		"all": {
-			"from": "sender@example.com",
-			"subject": "Personalized Attachment",
+			/* "from": "Dr. Sravya Sri Borra<sravya.b@athreva.com>",
+			"subject": "Label/packaging assessment services for global markets", */
+			"from": "Kush Mukherji<kush.m@athreva.com>",
+			"subject": "Support for Biologics Regulatory and Submissions",
 			"template": "mail-template"
 		},
 
@@ -63,8 +71,8 @@ module.exports = {
 		//
 		// see https://nodemailer.com/message/ for the options you can configure
 		"each": {
-			"to": "{{email}}",
-			"attachments": [{
+			"to": "{{email}}"
+			/* "attachments": [{
 				"filename": "attachment.pdf",
 				"path": "{{firstname}}_{{lastname}}.pdf"
 			}, {
@@ -72,7 +80,7 @@ module.exports = {
 				"path": "img.png",
 				"cid": "cidimg.png",
 				"contentDisposition": "inline"
-			}]
+			}] */
 		}
 	},
 
